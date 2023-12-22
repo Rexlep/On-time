@@ -2,8 +2,9 @@ import pytz
 import customtkinter as ctk
 import datetime
 import time
+import os
 
-from PIL import Image
+from PIL import Image, ImageTk
 from listbox.CTkListbox import *
 from datetime import datetime, date
 from messagebox.CTkMessagebox import CTkMessagebox
@@ -390,6 +391,11 @@ img_reset = ctk.CTkImage(Image.open("icons/reset.png"), size=(30, 30))
 main_window = ctk.CTk()
 main_window.title("On Time")
 main_window.geometry('800x500')
+
+icon_path = ImageTk.PhotoImage(file=(os.path.join("icons/O.ico")))
+main_window.wm_iconbitmap()
+main_window.iconphoto(False, icon_path)
+
 
 frame_main = ctk.CTkFrame(master=main_window)
 frame_main.pack(fill='both', expand=True)
