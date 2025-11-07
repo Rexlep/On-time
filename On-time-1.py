@@ -501,3 +501,4 @@ CreateToolTip(btn_flag_stopwatch, 'Flag')
 update_time()
 
 main_window.mainloop()
+print("END of the code")
