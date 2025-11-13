@@ -4,9 +4,6 @@ import datetime
 import time
 import os
 
-
-print
-
 from PIL import Image, ImageTk
 from listbox.CTkListbox import *
 from datetime import datetime, date
