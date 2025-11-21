@@ -3,7 +3,6 @@ import customtkinter as ctk
 import datetime
 import time
 import os
-
 from PIL import Image, ImageTk
 from listbox.CTkListbox import *
 from datetime import datetime, date
